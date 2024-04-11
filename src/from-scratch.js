@@ -95,7 +95,8 @@ const getNextOpponent = (team) => {
 }
 // console.log(getNextOpponent(fighters))
 
-const listAllKeys = () => {
+const listAllKeys = (object) => {
+  return Object.keys(object)
 };
 
 const listAllValues = () => {
