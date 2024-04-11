@@ -122,8 +122,15 @@ const listAllValues = (obj) => {
 console.log(listAllValues(person2));
 console.log(listAllValues(car));
 
-const convertToMatrix = () => {
-};
+const convertToMatrix = (arr) => {
+  if (arr.length === 0) return []
+  
+  const keys = Object.keys(arr[0])
+  const result = [keys]
+    for (let i = 0; i < arr.length ; i++){
+        result.push(Object.values(arr[i]))
+    } return result
+  };
 
 module.exports = {
   coolGreeting,
