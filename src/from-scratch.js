@@ -52,7 +52,10 @@ const person1 = {
 // console.log(person1.friends)
 
 
-const listHobbies = () => {
+const listHobbies = (person) => {
+  for (let i = 0; i < person.hobbies.length; i++){
+    console.log(`${person.name} likes ${person.hobbies[i]}.`)
+  }
 };
 
 const getNextOpponent = () => {
