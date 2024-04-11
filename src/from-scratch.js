@@ -27,8 +27,15 @@ const becomeSecretAgent = (person, spyHandle) => {
   // console.log(person)
   
   
-const carMaker = () => {
-};
+const carMaker = (name, maker, year) => {
+  const needsOilChange = false;
+  return {
+    name: name,
+    maker: maker, 
+    year: year, 
+    needsOilChange: needsOilChange
+    }
+  };
 
 const weAreNotFriends = () => {
 };
