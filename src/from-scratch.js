@@ -37,8 +37,20 @@ const carMaker = (name, maker, year) => {
     }
   };
 
-const weAreNotFriends = () => {
+
+// Question 5 - Abdullah 
+const weAreNotFriends = (person) => {
+  return person.friends.pop()
 };
+const person1 = {
+  name: 'Sara',
+  age: 30,
+  friends: ['Bob', 'Joe', 'Sally'],
+};
+
+// weAreNotFriends(person1)
+// console.log(person1.friends)
+
 
 const listHobbies = () => {
 };
