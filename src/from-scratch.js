@@ -18,9 +18,15 @@ const haveBirthday = (person) => {
  return person.age = person.age + 1
 }
 
-const becomeSecretAgent = () => {
-};
-
+// Question 3 - Abdullah 
+const becomeSecretAgent = (person, spyHandle) => {
+  delete person.name
+  person["spyHandle"] = spyHandle
+  }
+  // becomeSecretAgent(person, "007")
+  // console.log(person)
+  
+  
 const carMaker = () => {
 };
 
