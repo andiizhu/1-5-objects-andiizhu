@@ -58,8 +58,42 @@ const listHobbies = (person) => {
   }
 };
 
-const getNextOpponent = () => {
-};
+
+// Question 7 - Abdullah
+const getNextOpponent = (team) => {
+
+  if (team.matches[0] === undefined){
+    return null
+  }
+    return team.matches[0].teamName
+  }
+ const fighters = {
+  name: 'Fighters',
+  sport: 'basketball',
+  wins: 3,
+  location: {
+    city: 'Bridgeport',
+    state: 'CT',
+  },
+  matches: [
+    {
+      teamName: 'Dunkaroos',
+      skill: 9,
+      wins: 12,
+    },
+    {
+      teamName: 'Space Jammers',
+      skill: 10,
+      wins: 16,
+    },
+    {
+      teamName: 'Mustangs',
+      skill: 6,
+      wins: 10,
+    },
+  ]
+}
+// console.log(getNextOpponent(fighters))
 
 const listAllKeys = () => {
 };
