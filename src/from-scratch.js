@@ -99,8 +99,28 @@ const listAllKeys = (object) => {
   return Object.keys(object)
 };
 
-const listAllValues = () => {
+// Question 9 - Abdullah
+
+const person2 = {
+  name: 'Sara',
+  age: 30,
+  bio: 'What a legend',
 };
+const car = {
+  name: 'Civic',
+  maker: 'Honda',
+  year: 2010,
+};
+
+const listAllValues = (obj) => {
+  Object.values(person2)
+  Object.values(car)
+  return Object.values(obj)
+};
+
+
+console.log(listAllValues(person2));
+console.log(listAllValues(car));
 
 const convertToMatrix = () => {
 };
