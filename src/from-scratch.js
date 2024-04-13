@@ -119,19 +119,31 @@ const listAllValues = (obj) => {
 };
 
 
-console.log(listAllValues(person2));
-console.log(listAllValues(car));
+// console.log(listAllValues(person2));
+// console.log(listAllValues(car));
 
 const convertToMatrix = (arr) => {
   if (arr.length === 0) return []
-  
-  const keys = Object.keys(arr[0])
-  const result = [keys]
+
+  const result = [Object.keys(arr[0]),]
     for (let i = 0; i < arr.length ; i++){
         result.push(Object.values(arr[i]))
     } return result
   };
 
+  const users = [
+    {
+      name: 'Sara',
+      age: 30,
+      bio: 'What a legend',
+    }, 
+    {
+      name: 'Bob',
+      age: 30,
+      bio: "Kind of mean if we're being honest",
+    },
+  ];
+  console.log(convertToMatrix(users))
 module.exports = {
   coolGreeting,
   haveBirthday,
